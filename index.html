@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="PUBLIC">
+	<meta name="description" content="The Online To-Do List created by Xiaodan Zhang" />
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="bookmark" href="images/favicon.ico">
+	<title>Remember THESE!</title> 
+	<link rel="stylesheet" href="css/xiaodan.css" type="text/css" media="screen">
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
+	<script type="text/javascript" src="js/jQplugIns.js"></script>
+	<script type="text/javascript" src="js/style.js"></script>
+	<script type="text/javascript" src="js/list.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
+</head>
+<body>
+	<header id="navi">
+		<div class="container_12">
+			<div class="grid_12">
+				<div class="navi-wrapper">
+					<hgroup>
+						<a href="index.html"><h1>TODO List</h1></a>
+						<h2>your private secretary.</h2>	
+					</hgroup>
+					<nav>
+						<ul>
+							<li id="nav_home">
+								<a href="index.html">MY LIST</a>
+							</li>
+								
+							<li id="nav_about">
+								<a href="http://web.engr.illinois.edu/~zhang349", target="_blank">ABOUT</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="page" class="container_12">
+			<div id="inner_list" class="inner">
+					<ul id="ull">
+						<li>
+							<span id="submit" class="list_symbol tooltips">
+								<span>Click Here to Add a new List!</span>
+								<img type="image" src="images/add_opt.png" alt="Submit button"/>
+							</span>
+
+							<span class="list_name">
+								<input id="input" type="text"  placeholder="Create a new list..." onFocus="if(this.value==placeholder) {this.value=''}"> 
+								<!--CAUTION HERE! MUST HAVE IF THIS.VALUE==PLACEHOLDER -->
+							</span>
+
+							<span class="list_reset tooltips">
+								<span>Click Here to Reset Input!</span>
+								<img id="empty" src="images/trash.png"/>
+							</span>
+						</li>	
+					</ul>	
+			</div>
+			<div id="inner_notes" class="inner">
+				<div id="notes_title">	
+					<ul id="ull2">	
+						<li>
+							<span id="back_to_list" class="list_symbol tooltips">
+								<span>Click here to Go Back to Main Lists!</span>
+								<img type="image" src="images/backTolist48.png" alt="Submit button"/>
+							</span>	
+
+							<span>&nbsp;</span>
+
+							<span id="note_list_name">List name:</span>
+
+							<span class="delete_done">
+								<span id="delete_all_done" onclick="delete_done_notes()">Delete Done Notes</span>
+							</span>
+								
+							<span id="sort_deadline">
+								<select id="dropdown_select">  
+									<option value="">Select A Way to Sort Notes</option>
+									<option value="asc_alphabetic">Sort Alphabetically (Ascending)</option>
+									<option value="desc_alphabetic">Sort Alphabetically (Descending)</option>
+									<option value="asc_deadline">Sort by Deadlines (Urgent first)</option>
+									<option value="desc_deadline">Sort by Deadlines (Urgent last)</option>
+								</select>
+							</span>	
+						</li>
+					</ul>	
+				</div>	
+				<ul id="ull3">
+					<li>
+						<span id="submit_note" class="list_symbol tooltips">
+							<span>Click Here to Add a new Note!</span>
+							<img type="image" src="images/note_edit.png" alt="Submit button"/>
+						</span>
+
+						<span class="note_content">
+							<input id="input_note" type="text"  placeholder="Create a new note..." onFocus="if(this.value==placeholder) {this.value=''}"> 
+						</span>
+
+						<span class="note_reset tooltips">
+							<span>Click Here to Reset Input!</span>
+							<img id="empty_note" src="images/trash.png"/>
+						</span>
+
+						<span class="note_deadline">Deadline: </span>
+
+						<input type="text" id="input_note_deadline" placeholder="MM/DD/YYYY..." onFocus="if(this.value==placeholder) {this.value=''}"/>
+					</li>
+				</ul>	
+			</div>
+	</div>
+	<br>
+	<br>
+
+	<footer>
+		<div class="container_12">
+			<div class="grid_8">2013 &copy; Xiaodan Zhang &nbsp; 
+				<a class="mailto" href="#">zhang349@illinois.edu</a> . <a href="http://www.linkedin.com/pub/xiaodan-sally-zhang/35/475/b20", target="_blank">Linked In</a> . <a href="https://github.com/xiaodan", target="_blank">Git Hub</a>
+			</div>
+		</div>
+	</footer> 
+</body>        
+</html>

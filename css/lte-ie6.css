@@ -1,0 +1,21 @@
+header#navi{
+    position:static;
+    height:75px;
+    z-index:10000;
+    padding:20px 0;
+    width:100%; 
+    color:#303030;
+    font-family: 'Museo500', sans-serif;
+} 
+
+div#main{
+    padding-top:0px;
+}          
+
+section#intro hgroup{
+    padding-top:10px;
+}   
+
+/*
+    div#main > article  no IE 6 support
+*/
