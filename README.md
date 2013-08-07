@@ -30,7 +30,7 @@ http://www.myfonts.com/
 5) Anything else that you consider relevant to grading or useful.  
 Enjoy grading my TODO-List!  
 
-p.s. Bugs encontered (Soluction).
+p.s. Bugs encontered (Soluction).  
 1) DELETE-DONE-NOTES button doesn't work on mobile devices. (use onclick())  
 2) CLICK-TO-NOTE button doesn't work on SAFARI & mobile devices. (use onclick())  
 3) Adding notes with the same content, we delete the original one but the notes_num still increase. (if..else..)  
